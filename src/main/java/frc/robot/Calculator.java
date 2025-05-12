@@ -1,9 +1,11 @@
 package frc.robot;
-
+//Built in lib
 import java.util.Scanner;
+
 
 public class Calculator {
     public void start() {
+        //Get user input using scanner.
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Simple Java Calculator");
@@ -11,13 +13,15 @@ public class Calculator {
         double num1 = scanner.nextDouble();
 
         System.out.print("Enter operator (+, -, *, /): ");
+        //Takes arithmatic operation input form user
         char operator = scanner.next().charAt(0);
 
         System.out.print("Enter second number: ");
+        //add next number for arthmatic
         double num2 = scanner.nextDouble();
 
         double result;
-
+        //assesment of arithmatic operation
         switch (operator) {
             case '+':
                 result = num1 + num2;

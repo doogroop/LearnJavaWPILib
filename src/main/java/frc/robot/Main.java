@@ -27,17 +27,14 @@ public final class Main {
 
     //System.out.println("Hello World!");
 
+    //calls on Calculator class and initiates a new instance of it.
     Calculator calculator = new Calculator();
+    //calls on the start method.
     calculator.start();
   }
 
-  public int add(int a, int b){
-  
-    return a + b;
+
   }
-  public int sub(int a, int b){
-    return a - b;
-  }
-}
+
 
 
